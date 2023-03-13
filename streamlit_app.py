@@ -17,6 +17,8 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 
 with st.echo(code_location='below'):
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Dense
     # Define the model architecture
     model = Sequential()
     model.add(Dense(10, input_dim=X_train.shape[1], activation='relu'))
